@@ -343,3 +343,43 @@ footer {
 .contact-item i {
   color: white;
 }
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .nav-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #394559;
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  .nav-list.active {
+      display: flex;
+  }
+
+  .nav-list li {
+      margin: 10px 0;
+  }
+}

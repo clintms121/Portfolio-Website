@@ -11,6 +11,11 @@
     <header>
         <div class="site-title">Clint Stapleton</div>
         <nav class="navbar">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-list">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -153,5 +158,15 @@
         observer.observe(section);
     });
 </script>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navList = document.querySelector('.nav-list');
+
+    hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+</script>
+
 </body>
 </html>
