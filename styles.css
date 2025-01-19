@@ -396,3 +396,51 @@ footer {
 .project-btn:hover {
   background-color: #555;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+      padding: 10px 0;
+      justify-content: center;
+      position: relative;
+  }
+
+  .hamburger {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .site-title {
+      margin-left: 20px;
+  }
+
+  .nav-list {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: #394559;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+  }
+
+  .nav-list.active {
+      display: flex;
+  }
+
+  .nav-list li {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+  }
+
+  .nav-list a {
+      width: 100%;
+      padding: 10px 0;
+  }
+}
