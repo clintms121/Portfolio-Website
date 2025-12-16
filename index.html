@@ -1,185 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clint Stapleton</title>
+    <title>Clint Stapleton | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="site-title">Clint Stapleton</div>
-        <nav class="navbar">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">Clint Stapleton</span>
             </div>
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#education">Education</a></li>
-            </ul>
-        </nav>
-        <div class="card">
-            <a class="social-link1" href="https://github.com/clintms121" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-            </a>
-            <a class="social-link2" href="https://www.linkedin.com/in/clint-stapleton-73284a2b8/" target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>          </a>
-        </div> 
-    </header>
-
-    <main>
-        <section id="about">
-          <img src="mainFace.jpg" alt="My Photo" class="profile-photo">
-          <div class="about-text">
-            <h1>Hello, I'm Clint Stapleton!</h1>
-            <p>As an aspiring software developer with a passion for problem-solving and innovation, I’m eager to combine my technical skills with my commitment to hard work and discipline. Currently, I’m balancing my academic studies with my role as a student-athlete on the cross-country and track teams, where I’ve learned valuable lessons in perseverance, teamwork, and time management. I have been extremely fortunate to be enrolled in the honors college at Rogers State University which has given me vast opportunities in my professional career that I wouldn’t of been able to obtain otherwise. I am eager to apply my skills in software development to real-world problems and contribute to projects that make a difference.</p>
-          </div>
-        </section>
-      
-        <section id="projects">
-            <h1 style="color: white">Projects</h1>
-            <div class="projects-container">
-              <div class="project-card">
-                <h2>Smart Agriculture & IoT Monitoring Platform</h2>
-                <p>IoTMonitorPro is a full-stack IoT monitoring platform that delivers real-time field visibility and automated alerts for connected devices. Built with AWS IoT Core, FastAPI, and TimescaleDB, it provides scalable data ingestion, cloud-based analytics, and intelligent alerting through AWS SNS. The React/Vue.js dashboard—hosted on S3 and CloudFront—features dynamic data visualization and a basic ML-powered yield prediction tool for enhanced decision-making.</p>
-                <a href="https://github.com/clintms121/smart-agriculture-platform" target="_blank">View on GitHub</a>
-              </div>
-              <div class="project-card">
-                <h2>Java 3D Rendering Engine</h2>
-                <p>Java3DEngine is a custom-built 3D rendering engine designed for real-time visualization of 3D models. Developed with Java and JFrame, it features an intuitive GUI that allows users to load, manipulate, and view 3D scenes interactively, showcasing strong skills in graphics programming and object-oriented design.</p>
-                <a href="https://youtu.be/A4ZklbjJyqU" class="project-btn" target="_blank">Youtube Demo</a>
-                <a href="https://github.com/clintms121/3D_Rendering_Engine" class="project-btn" target="_blank">View on GitHub</a>
-            </div>
-              <div class="project-card">
-                <h2>TrafficGuardAI – Real-Time Traffic Hazard Detection and Alert System
-                </h2>
-                <p>TrafficGuardAI is a cutting-edge, full-stack application that leverages state-of-the-art deep learning to detect traffic hazards in real time from video files or live webcam feeds. Built with FastAPI, React, and Hugging Face's DETR model, it delivers instant, actionable insights for safer roads and smarter cities.</p>
-                <a href="https://github.com/clintms121/TrafficGuardAI" target="_blank">View on GitHub</a>
-                
-              </div>
-              <div class="project-card">
-                <h2>Portfolio Website</h2>
-                <p>I designed and developed a professional portfolio website to showcase my front-end skills as a developer. The site was built using HTML, CSS, and JavaScript, featuring a responsive layout to ensure a user friendly experience.</p>
-                <a href="https://clint-stapleton.com/" class="project-btn" target="_blank">Live Demo</a>
-                <a href="https://github.com/clintms121/Portfolio-Website" target="_blank">View on GitHub</a>
-              </div>
-            </div>
-          </section>
-          <section id="technologies">
-            <h1 style="color: white">Technologies</h1>
-            <div class="technologies-container">
-                <div class="technology-card">
-                    <h2>HTML</h2>
-                    <p>Experience with semantic HTML5 elements and best practices.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>CSS</h2>
-                    <p>Proficient in CSS3, including Flexbox, Grid, and responsive design.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>JavaScript</h2>
-                    <p>Skilled in ES6+, DOM manipulation, and modern JavaScript frameworks.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>Java</h2>
-                    <p>Experience with Java for backend development and desktop applications.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>Python</h2>
-                    <p>Experience with Python for data analysis, and machine learning.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>C#</h2>
-                    <p>Experienced in C# for developing desktop applications and game design utilizing Unity.</p>
-                </div>
-                <div class="technology-card">
-                    <h2>C++</h2>
-                    <p>Experience with C++ for systems programming, performance-critical applications, and competitive programming.</p>
-                </div>
             
-                <div class="technology-card">
-                    <h2>SQL</h2>
-                    <p>Proficient in SQL for database design, querying, and data manipulation (MySQL, PostgreSQL).</p>
-                </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-        <section id="education">
-            <h1 style="color: white">Education</h1>
-            <div class="education-container">
-                <div class="education-card">
-                    <img src="rsu.png" alt="University Image" class="university-image">
-                    <h2>Rogers State University</h2>
-                    <p>Bachelors in Information Technology, Artificial Intelligence</p>
-                    <p>Honors College</p>
-                    <p>Coding Club President</p>
-                    <p>Expected Graduation: May 2027</p>
-                    <p>GPA: 3.9</p>
-                </div>
-            </div>
-        </section>
-      </main>
-
-      <footer>
-        <div class ="contact-info">
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <a>clintmstapleton102@gmail.com</a>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <a href="tel:+1234567890">(918) 550-2973</a>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-      </footer>
+    </nav>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Clint Stapleton</span>
+                    </h1>
+                    <p class="hero-subtitle">Software Developer & Student-Athlete</p>
+                    <p class="hero-description">
+                        Passionate about creating innovative solutions through code. 
+                        Currently pursuing AI & Information Technology at Rogers State University.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/clintms121" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/clint-stapleton-73284a2b8/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="mainFace.jpg" alt="Clint Stapleton" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As an aspiring software developer with a passion for problem-solving and innovation, 
+                        I'm eager to combine my technical skills with my commitment to hard work and discipline. 
+                        Currently, I'm balancing my academic studies with my role as a student-athlete on the 
+                        cross-country and track teams.
+                    </p>
+                    <p>
+                        Through athletics, I've learned valuable lessons in perseverance, teamwork, and time 
+                        management. I have been extremely fortunate to be enrolled in the honors college at 
+                        Rogers State University, which has provided vast opportunities in my professional 
+                        career that I wouldn't have been able to obtain otherwise.
+                    </p>
+                    <p>
+                        I am eager to apply my skills in software development to real-world problems and 
+                        contribute to projects that make a difference.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3.9</span>
+                            <span class="stat-label">GPA</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            // Add visible class when entering viewport
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } 
-            // Remove visible class when leaving viewport
-            else {
-                entry.target.classList.remove('visible');
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '-50px'
-    });
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Smart Agriculture & IoT Monitoring</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/clintms121/smart-agriculture-platform" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Full-stack IoT monitoring platform with real-time field visibility and automated alerts. 
+                        Built with AWS IoT Core, FastAPI, TimescaleDB, and React. Features ML-powered yield prediction.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">AWS IoT</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">ML</span>
+                    </div>
+                </article>
 
-    // Observe all sections
-    document.querySelectorAll('section').forEach((section) => {
-        observer.observe(section);
-    });
-</script>
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Java 3D Rendering Engine</h3>
+                        <div class="project-links">
+                            <a href="https://youtu.be/A4ZklbjJyqU" target="_blank" class="project-link">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://github.com/clintms121/3D_Rendering_Engine" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Custom-built 3D rendering engine for real-time visualization. Features intuitive GUI 
+                        for loading and manipulating 3D scenes, showcasing graphics programming expertise.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JFrame</span>
+                        <span class="tech-tag">3D Graphics</span>
+                        <span class="tech-tag">GUI</span>
+                    </div>
+                </article>
 
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navList = document.querySelector('.nav-list');
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">TrafficGuardAI</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/clintms121/TrafficGuardAI" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Real-time traffic hazard detection system using deep learning. Processes video feeds 
+                        and webcam streams with Hugging Face's DETR model for intelligent traffic analysis.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                </article>
 
-    hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-    });
-</script>
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <div class="project-links">
+                            <a href="https://clint-stapleton.com/" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/clintms121/Portfolio-Website" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Professional portfolio website showcasing my development skills. Features responsive 
+                        design, smooth animations, and modern web development best practices.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Database & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>FastAPI</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-brain"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">Academic background</p>
+            </div>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-image">
+                        <img src="rsu.png" alt="Rogers State University" class="university-logo">
+                    </div>
+                    <div class="education-info">
+                        <h3 class="degree-title">Bachelor's in Information Technology</h3>
+                        <p class="specialization">Artificial Intelligence Specialization</p>
+                        <p class="university">Rogers State University</p>
+                        <div class="education-details">
+                            <div class="detail-item">
+                                <i class="fas fa-medal"></i>
+                                <span>Honors College</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>Coding Club President</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-running"></i>
+                                <span>Student-Athlete (Cross Country & Track)</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>Expected Graduation: May 2027</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>GPA: 3.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to start your next project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:clintmstapleton102@gmail.com">clintmstapleton102@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <a href="tel:+19185502973">(918) 550-2973</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Location</h3>
+                            <span>Oklahoma, USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Clint Stapleton. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/clintms121" target="_blank" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/clint-stapleton-73284a2b8/" target="_blank" class="footer-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
