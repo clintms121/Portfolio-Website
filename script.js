@@ -353,7 +353,32 @@ document.addEventListener('DOMContentLoaded', function() {
     setActiveNavLink();
     handleNavbarScroll();
     
+    // Resume functionality
+    initializeResumeSection();
+    
     console.log('Portfolio website loaded successfully! 🚀');
+
+    // Resume Section Functionality
+    function initializeResumeSection() {
+        const downloadResumeBtn = document.getElementById('download-resume-btn');
+        
+        // Resume download URL
+        const resumeDownloadUrl = './Clint Stapleton Resume (1).pdf';
+        
+        if (downloadResumeBtn) {
+            downloadResumeBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                downloadResume(resumeDownloadUrl);
+            });
+        }
+    }
+    
+    function downloadResume(url) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = 'Clint_Stapleton_Resume.pdf';
+        link.click();
+    }
 });
 
 // Error handling

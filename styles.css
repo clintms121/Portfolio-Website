@@ -577,6 +577,88 @@ body {
     text-align: center;
 }
 
+/* Resume Section */
+.resume {
+    padding: var(--space-20) 0;
+    background: var(--bg-primary);
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    margin-bottom: var(--space-8);
+}
+
+.resume-actions .btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    min-width: 160px;
+    justify-content: center;
+}
+
+.resume-preview {
+    background: var(--bg-card);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--light-gray);
+    min-height: 600px;
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+.resume-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.resume-placeholder i {
+    font-size: var(--font-size-6xl);
+    margin-bottom: var(--space-4);
+    color: var(--light-gray);
+}
+
+.resume-placeholder p {
+    font-size: var(--font-size-lg);
+    margin: 0;
+}
+
+.resume-embed {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+.resume-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    color: var(--text-secondary);
+}
+
+.resume-loading i {
+    font-size: var(--font-size-2xl);
+    margin-right: var(--space-3);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Contact Section */
 .contact {
     padding: var(--space-20) 0;
@@ -812,6 +894,16 @@ body {
     
     .education-details {
         grid-template-columns: 1fr;
+    }
+    
+    .resume-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .resume-actions .btn {
+        width: 100%;
+        max-width: 300px;
     }
     
     .footer-content {
